@@ -1,0 +1,39 @@
+
+body {
+    margin: 0 6%;
+}
+
+/* ===== Menu ===== */
+
+.menu {
+    height: 80px;
+}
+
+.name {
+    font-size: 30px;
+    font-family: serif;
+    font-style: italic;
+    line-height: 80px;
+}
+
+.block-menu {
+    float: right;
+}
+
+.name, .block-menu {
+    display: inline-block;
+}
+
+.menu-item .item {
+    display: inline-block;
+    font-size: 20px;
+    text-align: center;
+    width: 110px;
+    line-height: 80px;
+}
+
+.menu-item li a:hover {
+    text-decoration: none;
+}
+
+/* ================ */
