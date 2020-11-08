@@ -8,8 +8,14 @@ body {
 .menu {
     height: 80px;
     padding: 0 6%;
-    position: fixed;
+    position: absolute;
     width: 100%;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    background-color:rgba(5, 11, 63, 0.6);
 }
 
 .menu a {
@@ -29,6 +35,30 @@ body {
 
 .name, .block-menu {
     display: inline-block;
+}
+
+.menu-item li {
+    transform: translateY(1px);
+    animation: 2s slideUp ease forwards .5s;
+}
+
+.menu-item li a {
+    display: block;
+}
+
+.menu-item li::before {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 0px;
+    left: 0;
+    bottom: 10px;
+    background: rgba(253, 253, 253, 0.521); 
+    transition: all .5s ease;
+}
+  
+.menu-item li:hover:before {
+        width: 100%;
 }
 
 .menu-item .item {
@@ -60,6 +90,10 @@ body {
 
 .block-item-home {
     margin: auto 6%;
+}
+
+.card {
+    position: static;
 }
 
 /* ===== Footer ===== */
