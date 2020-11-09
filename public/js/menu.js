@@ -8,13 +8,16 @@
     }
     
     var menu = document.querySelector('.menu')
+    var fake = document.querySelector('.fake')
     var onScroll = function(){
         if(scrollY() > 0){
             menu.classList.add('fixed')
+            fake.classList.remove('fake-color')
         } else {
             menu.classList.remove('fixed')
+            fake.classList.add('fake-color')
         }
     }
-    window.addEventListener('scroll', setInterval(onScroll, 500))
+    window.addEventListener('scroll', onScroll)
 
 })()
