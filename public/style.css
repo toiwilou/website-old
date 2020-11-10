@@ -199,6 +199,14 @@ body {
 
 .diagram {
     padding: 30px;
+    border: 0;
+    background-color: rgb(245, 252, 245);
+}
+
+.text-note {
+    height: 29px;
+    font-family: serif;
+    font-size: 20px;
 }
 
 .note-tech {
@@ -211,11 +219,122 @@ body {
     color: rgb(0, 81, 255);
 }
 
-.div-note {
-    width: 100%;
+.div-note, .div-tech1, .div-tech2, .div-tech3, .div-tech4, .div-tech5, .div-tech6 {
     height: 13px;
     border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.div-note {
+    width: 100%;
     background-color: #ddebe9;
+}
+
+.div-tech1 {
+    width: 67%;
+    background-color: rgb(0, 183, 255);
+}
+
+.div-tech2 {
+    width: 78%;
+    background-color: rgb(58, 211, 20);
+}
+
+.div-tech3 {
+    width: 64%;
+    background-color: rgb(21, 146, 230);
+}
+
+.div-tech4 {
+    width: 81%;
+    background-color: rgb(56, 238, 11);
+}
+
+.div-tech5 {
+    width: 53%;
+    background-color: rgb(174, 0, 255);
+}
+
+.div-tech6 {
+    width: 39%;
+    background-color: rgb(226, 67, 19);
+}
+
+.landmark {
+    padding-left: 6%;
+    width: 100%;
+    height: 100%;
+    margin: 0 15px;
+    border-left: 2px solid;
+    border-bottom: 2px solid;
+}
+
+.note-skill, .note-ca, .note-qi, .note-qe, .note-kindness, .note-stress {
+    height: 100%;
+    width: 13px;
+    display: inline-block;
+    margin: 0 6%;
+}
+
+.fake-skill, .fake-ca, .fake-qi, .fake-qe, .fake-kindness, .fake-stress {
+    width: 13px;
+    background-color: rgb(245, 252, 245);
+}
+
+.note-skill {
+    background-color: rgb(0, 89, 255);
+}
+
+.fake-skill {
+    height: 18%;
+}
+
+.note-ca {
+    background-color: rgb(71, 250, 35);
+}
+
+.fake-ca {
+    height: 33%;
+}
+
+.note-qi {
+    background-color: rgb(255, 0, 149);
+}
+
+.fake-qi {
+    height: 36%;
+}
+
+.note-qe {
+    background-color: rgb(0, 183, 255);
+}
+
+.fake-qe {
+    height: 47%;
+}
+
+.note-kindness {
+    background-color: rgb(48, 175, 9);
+}
+
+.fake-kindness {
+    height: 22%;
+}
+
+.note-stress {
+    background-color: rgb(207, 22, 15);
+}
+
+.fake-stress {
+    height: 61%;
+}
+
+.list-quality li {
+    margin-top: 10px;
+    display: inline-block;
+    font-size: 12px;
+    width: 15%;
+    text-align: center;
 }
 
 /* ===== Footer ===== */
