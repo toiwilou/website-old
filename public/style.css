@@ -124,7 +124,7 @@ body {
 /* ===== profile ===== */
 
 .div-profile {
-    padding: 40px 10% 0 10%;
+    padding: 40px 7% 0 7%;
 }
 
 .row {
@@ -269,56 +269,80 @@ body {
     border-bottom: 2px solid;
 }
 
-.note-skill, .note-ca, .note-qi, .note-qe, .note-kindness, .note-stress {
+.note-skill, .note-independence, .note-optimism, .note-organization, .note-ca, .note-qi, .note-qe, .note-leader, .note-stress {
     height: 100%;
     width: 13px;
     display: inline-block;
-    margin: 0 6%;
+    margin: 0 3% 0 0;
 }
 
-.fake-skill, .fake-ca, .fake-qi, .fake-qe, .fake-kindness, .fake-stress {
+.fake-skill, .fake-independence, .fake-optimism, .fake-organization, .fake-ca, .fake-qi, .fake-qe, .fake-leader, .fake-stress {
     width: 13px;
     background-color: rgb(245, 252, 245);
 }
 
 .note-skill {
-    background-color: rgb(0, 89, 255);
+    background-color: rgb(88, 207, 20);
 }
 
 .fake-skill {
     height: 18%;
 }
 
+.note-independence {
+    background-color: rgb(142, 10, 230);
+}
+
+.fake-independence {
+    height: 35%;
+}
+
+.note-optimism {
+    background-color: rgb(255, 0, 128);
+}
+
+.fake-optimism {
+    height: 40%;
+}
+
+.note-organization {
+    background-color: rgb(27, 24, 221);
+}
+
+.fake-organization {
+    height: 37%;
+}
+
 .note-ca {
-    background-color: rgb(71, 250, 35);
-}
-
-.fake-ca {
-    height: 33%;
-}
-
-.note-qi {
-    background-color: rgb(255, 0, 149);
-}
-
-.fake-qi {
-    height: 36%;
-}
-
-.note-qe {
     background-color: rgb(0, 183, 255);
 }
 
-.fake-qe {
-    height: 47%;
+.fake-ca {
+    height: 25%;
 }
 
-.note-kindness {
+.note-qi {
+    background-color: rgb(0, 183, 255);
+}
+
+.fake-qi {
+    height: 33%;
+}
+
+.note-qe {
+    background-color: rgb(255, 0, 179);
+}
+
+.fake-qe {
+    height: 34%;
+}
+
+.note-leader {
     background-color: rgb(48, 175, 9);
 }
 
-.fake-kindness {
-    height: 22%;
+.fake-leader {
+    height: 35%;
 }
 
 .note-stress {
@@ -335,6 +359,17 @@ body {
     font-size: 12px;
     width: 15%;
     text-align: center;
+}
+
+.quality {
+    writing-mode: vertical-rl;
+    margin: 5px 0;
+}
+
+.qualities {
+    font-size: 20px;
+    font-family: serif;
+    text-align: right;
 }
 
 /* ===== Footer ===== */
