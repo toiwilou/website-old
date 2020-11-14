@@ -452,9 +452,33 @@ body {
     background-size: cover;
 }
 
+.block-contact {
+    margin: 0;
+    height: auto;
+    padding: 40px 8%;
+}
+
+.form-contact {
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+}
+
+.div-deck {
+    margin-bottom: 15px;
+}
+
+.send {
+    border-radius: 40px;
+}
+
 .maps {
-    margin: 10px;
+    margin: 0;
+    background-color: white;
+    padding-top: 50px;
+    padding-bottom: 20px;
     text-align: center;
+    border-top: 4px solid rgb(151, 151, 165);
 }
 
 /* ===== Footer ===== */
