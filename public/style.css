@@ -470,6 +470,23 @@ body {
 
 .send {
     border-radius: 40px;
+    background-color: #072DF9;
+}
+
+.div-contact {
+    padding: 20px;
+}
+
+.div-contact div {
+    border: 0;
+}
+
+.contact-img {
+    margin: 10px 0;
+}
+
+.contact-img .card {
+    margin: 0;
 }
 
 .maps {
@@ -478,7 +495,6 @@ body {
     padding-top: 50px;
     padding-bottom: 20px;
     text-align: center;
-    border-top: 4px solid rgb(151, 151, 165);
 }
 
 /* ===== Footer ===== */
