@@ -1,6 +1,6 @@
 
 body {
-    background-color: #ddebe9;
+    background-color: #eaeef1;
 }
 
 /* ===== Menu ===== */
@@ -124,7 +124,7 @@ body {
 /* ===== profile ===== */
 
 .div-profile {
-    padding: 40px 7% 0 7%;
+    padding: 0 7%;
 }
 
 .row {
@@ -200,8 +200,11 @@ body {
 .diagram {
     padding: 30px;
     border: 0;
+    height: 420px;
     background-color: rgb(245, 252, 245);
 }
+
+/* Diagrames horizontals */
 
 .text-note {
     height: 29px;
@@ -220,7 +223,7 @@ body {
 }
 
 .div-note, .div-tech1, .div-tech2, .div-tech3, .div-tech4, .div-tech5, .div-tech6 {
-    height: 13px;
+    height: 8px;
     border-radius: 6px;
     margin-bottom: 20px;
 }
@@ -237,28 +240,30 @@ body {
 
 .div-tech2 {
     width: 78%;
-    background-color: rgb(58, 211, 20);
+    background-color: rgb(0, 183, 255);
 }
 
 .div-tech3 {
     width: 64%;
-    background-color: rgb(21, 146, 230);
+    background-color: rgb(0, 183, 255);
 }
 
 .div-tech4 {
     width: 81%;
-    background-color: rgb(56, 238, 11);
+    background-color: rgb(0, 183, 255);
 }
 
 .div-tech5 {
     width: 53%;
-    background-color: rgb(174, 0, 255);
+    background-color: rgb(0, 183, 255);
 }
 
 .div-tech6 {
     width: 39%;
-    background-color: rgb(226, 67, 19);
+    background-color: rgb(0, 183, 255);
 }
+
+/* Diagrames verticals */
 
 .landmark {
     padding-left: 6%;
@@ -271,18 +276,18 @@ body {
 
 .note-skill, .note-independence, .note-optimism, .note-organization, .note-ca, .note-qi, .note-qe, .note-leader, .note-stress {
     height: 100%;
-    width: 13px;
+    width: 8px;
     display: inline-block;
     margin: 0 3% 0 0;
 }
 
 .fake-skill, .fake-independence, .fake-optimism, .fake-organization, .fake-ca, .fake-qi, .fake-qe, .fake-leader, .fake-stress {
-    width: 13px;
+    width: 8px;
     background-color: rgb(245, 252, 245);
 }
 
 .note-skill {
-    background-color: rgb(88, 207, 20);
+    background-color: rgba(25, 0, 255, 0.7);
 }
 
 .fake-skill {
@@ -290,7 +295,7 @@ body {
 }
 
 .note-independence {
-    background-color: rgb(142, 10, 230);
+    background-color: rgba(25, 0, 255, 0.7);
 }
 
 .fake-independence {
@@ -298,7 +303,7 @@ body {
 }
 
 .note-optimism {
-    background-color: rgb(255, 0, 128);
+    background-color: rgba(25, 0, 255, 0.7);
 }
 
 .fake-optimism {
@@ -306,7 +311,7 @@ body {
 }
 
 .note-organization {
-    background-color: rgb(27, 24, 221);
+    background-color: rgba(25, 0, 255, 0.7);
 }
 
 .fake-organization {
@@ -314,7 +319,7 @@ body {
 }
 
 .note-ca {
-    background-color: rgb(0, 183, 255);
+    background-color: rgba(25, 0, 255, 0.7);
 }
 
 .fake-ca {
@@ -322,7 +327,7 @@ body {
 }
 
 .note-qi {
-    background-color: rgb(0, 183, 255);
+    background-color: rgba(25, 0, 255, 0.7);
 }
 
 .fake-qi {
@@ -330,7 +335,7 @@ body {
 }
 
 .note-qe {
-    background-color: rgb(255, 0, 179);
+    background-color: rgba(25, 0, 255, 0.7);
 }
 
 .fake-qe {
@@ -338,7 +343,7 @@ body {
 }
 
 .note-leader {
-    background-color: rgb(48, 175, 9);
+    background-color: rgba(25, 0, 255, 0.7);
 }
 
 .fake-leader {
@@ -346,7 +351,7 @@ body {
 }
 
 .note-stress {
-    background-color: rgb(207, 22, 15);
+    background-color: rgba(25, 0, 255, 0.7);
 }
 
 .fake-stress {
@@ -370,6 +375,86 @@ body {
     font-size: 20px;
     font-family: serif;
     text-align: right;
+}
+
+/* Formations */
+
+.formations {
+    margin-top: 30px;
+}
+
+.left-formations {
+    width: 40%;
+    background-color: blueviolet;
+}
+
+.round-barre, .paragraph {
+    display: inline-block;
+}
+
+.round-barre {
+    width: 50px;
+}
+
+.barre {
+    height: 100%;
+    width: 100%;
+    margin-left: 14px;
+    background-color: blue;
+}
+
+.round {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    border-radius:18px;
+    background-color: blue;
+}
+
+/* ===== Gallerie ===== */
+
+.header-gallery {
+    width: 100%;
+    height: auto;
+    padding-top: 100px;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 40px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+    background-image: url('img/fond4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title-gallery {
+    font-size: 150px;
+}
+
+.para-gallery {
+    font-size: 25px;
+}
+
+.div-photos {
+    margin: 0;
+    padding: 60px 10%;
+    height: 1000px;
+    background-color: cornsilk;
+}
+
+/* ===== Contact ===== */
+
+.header-contact {
+    width: 100%;
+    height: 500px;
+    background-image: url('img/fond2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.maps {
+    margin: 10px;
+    text-align: center;
 }
 
 /* ===== Footer ===== */
