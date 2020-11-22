@@ -3,17 +3,26 @@ body {
     background-color: #eaeef1;
 }
 
+.div-background {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(5, 11, 63, 0.8);
+}
+
 /* ===== Menu ===== */
 
 .menu {
-    height: 80px;
+    height: 150px;
     padding: 0 6%;
     position: absolute;
     width: 100%;
+    line-height: 150px;
 }
 
 .fixed {
     position: fixed;
+    height: 80px;
+    line-height: 80px;
     top: 0;
     background-color:rgba(5, 11, 63, 0.5);
     transition: 1s;
@@ -21,7 +30,7 @@ body {
 
 .fake {
     width: 100%;
-    height: 80px;
+    height: 150px;
 }
 
 .fake-color {
@@ -68,7 +77,7 @@ body {
 }
   
 .menu-item li:hover:before {
-        width: 100%;
+    width: 100%;
 }
 
 .menu-item .item {
@@ -88,9 +97,32 @@ body {
 
 .div-home {
     width: 100%;
-    height: 630px;
     background-color: #6d09ff;
     padding: 170px 0 0 9%;
+}
+
+.img-index, .text-header-index {
+    display: inline-block;
+}
+
+.img-index {
+    width: 30%;
+    text-align: center;
+}
+
+.text-header-index {
+    width: 50%;
+    vertical-align: bottom;
+    color: white;
+    padding-bottom: 50px;
+}
+
+.index-header-title {
+    font-size: 60px;
+}
+
+.para-header-index {
+    text-align: justify;
 }
 
 .block-text-home {
@@ -123,6 +155,20 @@ body {
 
 /* ===== profile ===== */
 
+.div-header-profile {
+    width: 100%;
+    height: 550px;
+    background-image: url('img/img-background-profile.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.div-parcours {
+    color: white;
+    padding: 180px 20%;
+    text-align: center;
+}
+
 .div-profile {
     padding: 0 7%;
 }
@@ -141,6 +187,7 @@ body {
 
 .block-profile {
     padding: 30px;
+    border-radius: 0;
 }
 
 .img-profile {
@@ -415,14 +462,8 @@ body {
 
 .header-gallery {
     width: 100%;
-    height: auto;
-    padding-top: 100px;
-    padding-left: 20%;
-    padding-right: 20%;
-    padding-bottom: 40px;
-    text-align: center;
-    color: rgba(255, 255, 255, 0.8);
-    background-image: url('img/fond4.jpg');
+    height: 550px;
+    background-image: url('img/fond_gallerie.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
 }
