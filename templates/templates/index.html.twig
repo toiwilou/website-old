@@ -4,7 +4,7 @@
 
 {% block body %}
 
-<div class="div-home">
+<section class="div-home">
   <div class="img-index">
     <img src="img/photo-index.png">
   </div>
@@ -12,53 +12,141 @@
     <h1 class="index-header-title"><strong>Business is <br> Now Digital</strong></h1>
     <p class="para-header-index">
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis natus asperiores ullam praesentium consequuntur quasi illum eos eveniet fuga mollitia. Eveniet consectetur non nisi reiciendis enim obcaecati ipsam similique fuga?
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis natus asperiores ullam praesentium consequuntur quasi illum eos eveniet fuga mollitia. Eveniet consectetur non nisi reiciendis enim obcaecati ipsam similique fuga?
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis natus asperiores ullam praesentium consequuntur quasi illum eos eveniet fuga mollitia. Eveniet consectetur non nisi reiciendis enim obcaecati ipsam similique fuga...
     </p>
     <button type="button" class="btn btn-light">Voir mon profil</button>
     <button type="button" class="btn btn-outline-light">En savoir plus</button>
   </div>
-</div>
+</section>
 
-<div class="card-deck mb-3 block-text-home">
-    <div class="card mb-4 shadow-sm">
-      <div class="card-body">
-        <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1>
-        <ul class="list-unstyled mt-3 mb-4">
-          <li>10 users included</li>
-          <li>2 GB of storage</li>
-          <li>Email support</li>
-          <li>Help center access</li>
-        </ul>
-      </div>
+<section class="section-courses-home">
+  <h1><strong>Texte d'introduction des cours</strong></h1>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti in veritatis corporis labore earum eveniet aut, vel laborum, voluptates cum cumque laudantium nesciunt, quas impedit tempore perferendis fugiat a cupiditate.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti in veritatis corporis labore earum eveniet aut, vel laborum, voluptates cum cumque laudantium nesciunt, quas impedit tempore perferendis fugiat a cupiditate.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti in veritatis corporis labore earum eveniet aut, vel laborum, voluptates cum cumque laudantium nesciunt, quas impedit tempore perferendis fugiat a cupiditate.
+  </p>
+
+  <div class="card-deck mb-3 block-courses-home">
+    <div class="block-item card">
+      <a href="{{ path("profile") }}"></a>
     </div>
-</div>
 
-<div class="card-deck mb-3 block-item-home">
-  <div class="block-item card">
-    <a href="{{ path("profile") }}"></a>
-  </div>
-
-  <div class="block-item card">
-    <a href="{{ path("gallery") }}"></a>
-  </div>
-
-  <div class="block-item card">
-    <a href="{{ path("contact") }}"></a>
-  </div>
-</div>
-
-<div class="card-deck mb-3 block-text-home">
-    <div class="card mb-4 shadow-sm">
-      <div class="card-body">
-        <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1>
-        <ul class="list-unstyled mt-3 mb-4">
-          <li>10 users included</li>
-          <li>2 GB of storage</li>
-          <li>Email support</li>
-          <li>Help center access</li>
-        </ul>
-      </div>
+    <div class="block-item card">
+      <a href="{{ path("gallery") }}"></a>
     </div>
-</div>
+
+    <div class="block-item card">
+      <a href="{{ path("contact") }}"></a>
+    </div>
+  </div>
+</section>
+
+<section class="block-project-home">
+  <div class="card-deck mb-3">
+      <div class="card mb-4 shadow-sm">
+        <div class="card-body div-project-home">
+          <h1 class="title-project-home"><strong>Projet professionnel</strong></h1>
+          <p class="para-project-home">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti in veritatis corporis labore earum eveniet aut, vel laborum, voluptates cum cumque laudantium nesciunt, quas impedit tempore perferendis fugiat a cupiditate.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti in veritatis corporis labore earum eveniet aut, vel laborum, voluptates cum cumque laudantium nesciunt, quas impedit tempore perferendis fugiat a cupiditate.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti in veritatis corporis labore earum eveniet aut, vel laborum, voluptates cum cumque laudantium nesciunt, quas impedit tempore perferendis fugiat a cupiditate.
+          </p>
+          <button type="button" class="btn btn-outline-primary">En savoir plus</button>
+        </div>
+      </div>
+  </div>
+</section>
+
+<section class="block-contact card-deck">
+
+  <div class="div-text-contact">
+    <h1 class="title-contact"><strong>Prendre contact</strong></h1>
+    <p class="para-contact">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates veniam quidem, vitae consectetur tempora optio et. Culpa nemo ullam amet earum dolorum rem quae. Corrupti reiciendis consequatur repellat alias nisi.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates veniam quidem, vitae consectetur tempora optio et. Culpa nemo ullam amet earum dolorum rem quae. Corrupti reiciendis consequatur repellat alias nisi.
+    </p>
+  </div>
+
+  <div class="card form-contact">
+      <form>
+          <div class="card-deck div-deck">
+              <div class="form-group card">
+                  <input required type="text" name="firstname" class="form-control" placeholder="Votre nom *">
+              </div>
+              <div class="form-group card">
+                  <input required type="text" name="lastname" class="form-control" placeholder="Votre prénom *">
+              </div>
+          </div>
+          <div class="card-deck div-deck">
+              <div class="form-group card">
+                  <input required type="tel" name="phone" class="form-control" placeholder="Votre numéro de téléphone *">
+              </div>
+              <div class="form-group card">
+                  <select name="reservation" class="form-control" required>
+                      <option value="">Civilité *</option>
+                      <option value="Cours régulier">Monsieur</option>
+                      <option value="Cours ponctuel">Madame</option>
+                  </select>
+              </div>
+          </div>
+          <div class="form-group">
+              <input required type="email" name="email" class="form-control" placeholder="Votre adresse email *">
+          </div>
+          <div class="form-group">
+              <textarea required name="message" class="form-control" rows="8" placeholder="Votre message *"></textarea>
+          </div>
+          <input type="submit" class="send btn btn-lg btn-block btn-primary">
+      </form>
+  </div>
+  <div class="card col-md-4 div-contact">
+      <div class="contact-img card-deck">
+          <div class="col-md-2 card">
+              <div><img src="{{ asset("img/home.png") }}"></div>
+          </div>
+          <div class="card">
+              <h4><strong>Adresse</strong></h4>
+              <p>13 Rue Saint-Georges 9440 Ablon-sur-Seine</p>
+          </div>
+      </div>
+      <div class="contact-img card-deck">
+          <div class="col-md-2 card">
+              <div><img src="{{ asset("img/phone-call.png") }}"></div>
+          </div>
+          <div class="card">
+              <h4><strong>Téléphone</strong></h4>
+              <p>06 23 52 41 31</p>
+          </div>
+      </div>
+      <div class="contact-img card-deck">
+          <div class="col-md-2 card">
+              <div><img src="{{ asset("img/envelope.png") }}"></div>
+          </div>
+          <div class="card">
+              <h4><strong>E-mail</strong></h4>
+              <p><span>toiwilouhassane@gmail.com</span></p>
+          </div>
+      </div>
+      <div class="contact-img card-deck">
+          <div class="col-md-2 card">
+              <div><img src="{{ asset("img/linkedin.png") }}"></div>
+          </div>
+          <div class="card">
+              <h4><strong>LinkedIn</strong></h4>
+              <p>Toiwilou Hassane</p>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section class="maps">
+  <div id="iframe">
+      <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2632.085479040339!2d2.
+      4183312151963228!3d48.722958318187736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x
+      47e675179c90f5bf%3A0x97663ef81bd7f26b!2s13%20Rue%20Saint-Georges%2C%2094480%20Ablon-sur-
+      Seine!5e0!3m2!1sfr!2sfr!4v1570629206412!5m2!1sfr!2sfr" width="700" height="450" frameborder="0" 
+      style="border: 1px solid rgb(191, 191, 211); border-radius: 2px" allowfullscreen=""></iframe>
+  </div>
+</section>
 
 {% endblock %}

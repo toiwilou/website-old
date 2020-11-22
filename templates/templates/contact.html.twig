@@ -4,92 +4,10 @@
 
 {% block body %}
 
-<div class="header-contact">
+<section class="header-contact">
     <div class="div-background">
-
+        
     </div>
-</div>
-
-<div class="block-contact card-deck">
-    <div class="card form-contact">
-        <form>
-            <div class="card-deck div-deck">
-                <div class="form-group card">
-                    <input required type="text" name="firstname" class="form-control" placeholder="Votre nom *">
-                </div>
-                <div class="form-group card">
-                    <input required type="text" name="lastname" class="form-control" placeholder="Votre prénom *">
-                </div>
-            </div>
-            <div class="card-deck div-deck">
-                <div class="form-group card">
-                    <input required type="tel" name="phone" class="form-control" placeholder="Votre numéro de téléphone *">
-                </div>
-                <div class="form-group card">
-                    <select name="reservation" class="form-control" required>
-                        <option value="">Civilité *</option>
-                        <option value="Cours régulier">Monsieur</option>
-                        <option value="Cours ponctuel">Madame</option>
-                    </select>
-                </div>
-            </div>
-            <div class="form-group">
-                <input required type="email" name="email" class="form-control" placeholder="Votre adresse email *">
-            </div>
-            <div class="form-group">
-                <textarea required name="message" class="form-control" rows="8" placeholder="Votre message *"></textarea>
-            </div>
-            <input type="submit" class="send btn btn-lg btn-block btn-primary">
-        </form>
-    </div>
-    <div class="card col-md-4 div-contact">
-        <div class="contact-img card-deck">
-            <div class="col-md-2 card">
-                <div><img src="{{ asset("img/home.png") }}"></div>
-            </div>
-            <div class="card">
-                <h4><strong>Adresse</strong></h4>
-                <p>13 Rue Saint-Georges 9440 Ablon-sur-Seine</p>
-            </div>
-        </div>
-        <div class="contact-img card-deck">
-            <div class="col-md-2 card">
-                <div><img src="{{ asset("img/phone-call.png") }}"></div>
-            </div>
-            <div class="card">
-                <h4><strong>Téléphone</strong></h4>
-                <p>06 23 52 41 31</p>
-            </div>
-        </div>
-        <div class="contact-img card-deck">
-            <div class="col-md-2 card">
-                <div><img src="{{ asset("img/envelope.png") }}"></div>
-            </div>
-            <div class="card">
-                <h4><strong>E-mail</strong></h4>
-                <p><span>toiwilouhassane@gmail.com</span></p>
-            </div>
-        </div>
-        <div class="contact-img card-deck">
-            <div class="col-md-2 card">
-                <div><img src="{{ asset("img/linkedin.png") }}"></div>
-            </div>
-            <div class="card">
-                <h4><strong>LinkedIn</strong></h4>
-                <p>Toiwilou Hassane</p>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="maps">
-    <div id="iframe">
-        <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2632.085479040339!2d2.
-        4183312151963228!3d48.722958318187736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x
-        47e675179c90f5bf%3A0x97663ef81bd7f26b!2s13%20Rue%20Saint-Georges%2C%2094480%20Ablon-sur-
-        Seine!5e0!3m2!1sfr!2sfr!4v1570629206412!5m2!1sfr!2sfr" width="700" height="450" frameborder="0" 
-        style="border: 1px solid rgb(191, 191, 211); border-radius: 2px" allowfullscreen=""></iframe>
-    </div>
-</div>
+</section>
 
 {% endblock %}

@@ -9,6 +9,10 @@ body {
     background-color: rgba(5, 11, 63, 0.8);
 }
 
+.card {
+    position: static;
+}
+
 /* ===== Menu ===== */
 
 .menu {
@@ -125,17 +129,14 @@ body {
     text-align: justify;
 }
 
-.block-text-home {
-    margin: 40px 15%;
+.section-courses-home {
+    padding: 100px 12%;
     text-align: center;
+    background-color: white;
 }
 
-.block-item-home {
-    margin: auto 10%;
-}
-
-.card {
-    position: static;
+.block-courses-home {
+    margin: 100px auto;
 }
 
 .block-item {
@@ -153,6 +154,26 @@ body {
     transform: scale(1.1);
 }
 
+.block-project-home {
+    padding: 100px 15%;
+}
+
+.div-project-home {
+    padding: 40px 7%;
+}
+
+.title-project-home {
+    font-size: 60px;
+    margin: 30px auto;
+    color: rgb(73, 115, 231);
+}
+
+.para-project-home {
+    font-size: 20px;
+    margin: 30px auto;
+    text-align: justify;
+}
+
 /* ===== profile ===== */
 
 .div-header-profile {
@@ -164,9 +185,17 @@ body {
 }
 
 .div-parcours {
-    color: white;
+    color: rgba(255, 255, 255, 0.7);
     padding: 180px 20%;
     text-align: center;
+}
+
+.title-header-profile {
+    font-size: 70px;
+}
+
+.para-header-profile {
+    font-size: 20px;
 }
 
 .div-profile {
@@ -493,10 +522,24 @@ body {
     background-size: cover;
 }
 
+.div-text-contact {
+    color: black;
+    text-align: center;
+}
+
+.title-contact {
+    font-size: 70px;
+}
+
+.para-contact {
+    font-size: 18px;
+    margin-bottom: 90px;
+}
+
 .block-contact {
     margin: 0;
     height: auto;
-    padding: 40px 8%;
+    padding: 120px 8%;
 }
 
 .form-contact {
