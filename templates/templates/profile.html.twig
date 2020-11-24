@@ -4,109 +4,192 @@
 
 {% block body %}
 
-<div class="div-header-profile">
+<section class="div-header-profile">
     <div class="div-background">
         <div class="div-parcours">
             <h1 class="title-header-profile"><strong>Mon parcours</strong></h1>
             <p class="para-header-profile">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque magnam expedita beatae voluptatem aut dignissimos id saepe maxime at molestias ut eaque sunt necessitatibus harum, hic non quod quaerat quibusdam!sunt necessitatibus harum, hic non quod quaerat quibusdam!
+                Lorem Neque magnam expedita beatae voluptatem aut dignissimos id saepe maxime at molestias ut eaque sunt necessitatibus harum, hic non quod quaerat quibusdam!sunt necessitatibus harum, hic non quod quaerat quibusdam!
             </p>
             <button type="button" class="btn btn-outline-light">Voir mon parcours</button>
         </div>
     </div>
-</div>
+</section>
 
-<div class="div-profile">
-    <div class="block-profile card">
-        <div class="row">
-            <div class="column col-md-3 img-profile">
-                
-            </div>
-    
-            <div class="column col-md-6 header-profile">
-                <h1 style="color: rgb(14, 25, 83);">Toiwilou Hassane</h1>
-                <span class="poste"><strong>Ingénieur DevOps</strong></span>
-                <div class="div-star"><span class="note">6,7</span><span class="full-star"> &#9733;&#9733;&#9733;</span>
-                <span class="empty-star">&#9734;&#9734;</span></div>
-                <div><span class="number">06 23 52 41 31</span></div>
-                <div><span class="email">toiwilouhassane@gmail.com</span></div>
-            </div>
+<section class="block-profile">
+    <div class="row">
+        <div class="column col-md-3 img-profile">
+            
+        </div>
 
-            <div class="div-cv column col-md-2">
-                <a href="#"><button type="button" class="btn btn-outline-primary">Voir mon CV &raquo;</button></a>
+        <div class="column col-md-6 header-profile">
+            <h1 style="color: rgb(14, 25, 83);">Toiwilou Hassane</h1>
+            <span class="poste"><strong>Ingénieur DevOps</strong></span>
+            <div class="div-star"><span class="note">6,7</span><span class="full-star"> &#9733;&#9733;&#9733;</span>
+            <span class="empty-star">&#9734;&#9734;</span></div>
+            <div><span class="number">06 23 52 41 31</span></div>
+            <div><span class="email">toiwilouhassane@gmail.com</span></div>
+        </div>
+
+        <div class="div-cv column col-md-2">
+            <a href="#"><button type="button" class="btn btn-outline-primary">Voir mon CV &raquo;</button></a>
+        </div>
+    </div>
+</section>
+
+<section class="block-formations">
+    <div class="div-text-formations">
+        <h1><strong>Mes Formations</strong></h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat hic velit itaque consequatur natus nulla, ullam accusantium vel nobis tempora commodi ipsa. Quas, culpa at nam expedita autem vero nulla.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat hic velit itaque consequatur natus nulla, ullam accusantium vel nobis tempora commodi ipsa. Quas, culpa at nam expedita autem vero nulla.
+        </p>
+    </div>
+    <div class="div-formations">
+        <div class="div-block">
+            <div class="div-left">
+                <div class="div-round">
+                    <div class="round-img"><img src="{{ asset("img/pencil.png")}}"></div>
+                </div>
+                <div class="div-barre"></div>
+            </div>
+            <div class="div-right">
+                <h1>Formation</h1>
+                <p>Lorem Dolorem, quam temporibus molestiae voluptates a delectus dicta tempore enim velit, minima odio repellat autem esse molestias quisquam id corporis soluta. Asperiores.</p>
             </div>
         </div>
-        <div class="card-deck diagrams">
-            <div class="card col-md-5 diagram">
-                <div class="text-note"><span>API REST / Laravel / Symfony </span><span class="note-tech">6,7 
-                    <span class="small-text">/10</span></span>
+        <div class="div-block">
+            <div class="div-left">
+                <div class="div-round">
+                    <div class="round-img"><img src="{{ asset("img/pencil.png")}}"></div>
                 </div>
-                <div class="div-note"><div class="div-tech1"></div></div>
-                <div class="text-note"><span>HTML / CSS / PHP / Git</span><span class="note-tech">7,8 
-                    <span class="small-text">/10</span></span>
-                </div>
-                <div class="div-note"><div class="div-tech2"></div></div>
-                <div class="text-note"><span>Bootstrap / JavaScript </span><span class="note-tech">6,4 
-                    <span class="small-text">/10</span></span>
-                </div>
-                <div class="div-note"><div class="div-tech3"></div></div>
-                <div class="text-note"><span>Java SE  </span><span class="note-tech">8,1 
-                    <span class="small-text">/10</span></span>
-                </div>
-                <div class="div-note"><div class="div-tech4"></div></div>
-                <div class="text-note"><span>Node.js / Express / MongoDB / MySQL </span><span class="note-tech">5,3 
-                    <span class="small-text">/10</span></span>
-                </div>
-                <div class="div-note"><div class="div-tech5"></div></div>
-                <div class="text-note"><span>ReactJS / jQuery</span><span class="note-tech">3,9 
-                    <span class="small-text">/10</span></span>
-                </div>
-                <div class="div-note"><div class="div-tech6"></div></div>
+                <div class="div-barre"></div>
             </div>
-            <div class="card diagram">
-                <span class="text-note">Notes(%)</span>
-                <div class="landmark">
-                    <span class="quality">Capacité d'écoute</span>
-                    <div class="note-ca">
-                        <div class="fake-ca"></div>
-                    </div>
-                    <span class="quality">Compétences</span>
-                    <div class="note-skill">
-                        <div class="fake-skill"></div>
-                    </div>
-                    <span class="quality">Indépendance</span>
-                    <div class="note-independence">
-                        <div class="fake-independence"></div>
-                    </div>
-                    <span class="quality">Optimisme</span>
-                    <div class="note-optimism">
-                        <div class="fake-optimism"></div>
-                    </div>
-                    <span class="quality">Organisation</span>
-                    <div class="note-organization">
-                        <div class="fake-organization"></div>
-                    </div>
-                    <span class="quality">Qualité de Leader</span>
-                    <div class="note-leader">
-                        <div class="fake-leader"></div>
-                    </div>
-                    <span class="quality">Quotient intellectuel</span>
-                    <div class="note-qi">
-                        <div class="fake-qi"></div>
-                    </div>
-                    <span class="quality">Quotient émotinnel</span>
-                    <div class="note-qe">
-                        <div class="fake-qe"></div>
-                    </div>
-                    <span class="quality">Stresse</span>
-                    <div class="note-stress">
-                        <div class="fake-stress"></div>
-                    </div>
+            <div class="div-right">
+                <h1>Formation</h1>
+                <p>Lorem Dolorem, quam temporibus molestiae voluptates a delectus dicta tempore enim velit, minima odio repellat autem esse molestias quisquam id corporis soluta. Asperiores.</p>
+            </div>
+        </div>
+        <div class="div-block">
+            <div class="div-left">
+                <div class="div-round">
+                    <div class="round-img"><img src="{{ asset("img/pencil.png")}}"></div>
                 </div>
-                <span class="qualities">Qualités</span>
+            </div>
+            <div class="div-right">
+                <h1>Formation</h1>
             </div>
         </div>
     </div>
-</div>
+    <div class="div-formations">
+        <div class="div-block">
+            <div class="div-left">
+                <div class="div-round">
+                    <div class="round-img"><img src="{{ asset("img/pencil.png")}}"></div>
+                </div>
+                <div class="div-barre"></div>
+            </div>
+            <div class="div-right">
+                <h1>Formation</h1>
+                <p>Lorem Dolorem, quam temporibus molestiae voluptates a delectus dicta tempore enim velit, minima odio repellat autem esse molestias quisquam id corporis soluta. Asperiores.</p>
+            </div>
+        </div>
+        <div class="div-block">
+            <div class="div-left">
+                <div class="div-round">
+                    <div class="round-img"><img src="{{ asset("img/pencil.png")}}"></div>
+                </div>
+                <div class="div-barre"></div>
+            </div>
+            <div class="div-right">
+                <h1>Formation</h1>
+                <p>Lorem Dolorem, quam temporibus molestiae voluptates a delectus dicta tempore enim velit, minima odio repellat autem esse molestias quisquam id corporis soluta. Asperiores.</p>
+            </div>
+        </div>
+        <div class="div-block">
+            <div class="div-left">
+                <div class="div-round">
+                    <div class="round-img"><img src="{{ asset("img/pencil.png")}}"></div>
+                </div>
+            </div>
+            <div class="div-right">
+                <h1>Formation</h1>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="block-profile">
+    <div class="card-deck diagrams">
+        <div class="card col-md-5 diagram">
+            <div class="text-note"><span>API REST / Laravel / Symfony </span><span class="note-tech">6,7 
+                <span class="small-text">/10</span></span>
+            </div>
+            <div class="div-note"><div class="div-tech1"></div></div>
+            <div class="text-note"><span>HTML / CSS / PHP / Git</span><span class="note-tech">7,8 
+                <span class="small-text">/10</span></span>
+            </div>
+            <div class="div-note"><div class="div-tech2"></div></div>
+            <div class="text-note"><span>Bootstrap / JavaScript </span><span class="note-tech">6,4 
+                <span class="small-text">/10</span></span>
+            </div>
+            <div class="div-note"><div class="div-tech3"></div></div>
+            <div class="text-note"><span>Java SE  </span><span class="note-tech">8,1 
+                <span class="small-text">/10</span></span>
+            </div>
+            <div class="div-note"><div class="div-tech4"></div></div>
+            <div class="text-note"><span>Node.js / Express / MongoDB / MySQL </span><span class="note-tech">5,3 
+                <span class="small-text">/10</span></span>
+            </div>
+            <div class="div-note"><div class="div-tech5"></div></div>
+            <div class="text-note"><span>ReactJS / jQuery</span><span class="note-tech">3,9 
+                <span class="small-text">/10</span></span>
+            </div>
+            <div class="div-note"><div class="div-tech6"></div></div>
+        </div>
+        <div class="card diagram">
+            <span class="text-note">Notes(%)</span>
+            <div class="landmark">
+                <span class="quality">Capacité d'écoute</span>
+                <div class="note-ca">
+                    <div class="fake-ca"></div>
+                </div>
+                <span class="quality">Compétences</span>
+                <div class="note-skill">
+                    <div class="fake-skill"></div>
+                </div>
+                <span class="quality">Indépendance</span>
+                <div class="note-independence">
+                    <div class="fake-independence"></div>
+                </div>
+                <span class="quality">Optimisme</span>
+                <div class="note-optimism">
+                    <div class="fake-optimism"></div>
+                </div>
+                <span class="quality">Organisation</span>
+                <div class="note-organization">
+                    <div class="fake-organization"></div>
+                </div>
+                <span class="quality">Qualité de Leader</span>
+                <div class="note-leader">
+                    <div class="fake-leader"></div>
+                </div>
+                <span class="quality">Quotient intellectuel</span>
+                <div class="note-qi">
+                    <div class="fake-qi"></div>
+                </div>
+                <span class="quality">Quotient émotinnel</span>
+                <div class="note-qe">
+                    <div class="fake-qe"></div>
+                </div>
+                <span class="quality">Stresse</span>
+                <div class="note-stress">
+                    <div class="fake-stress"></div>
+                </div>
+            </div>
+            <span class="qualities">Qualités</span>
+        </div>
+    </div>
+</section>
 
 {% endblock %}

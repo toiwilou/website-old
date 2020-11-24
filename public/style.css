@@ -1,6 +1,6 @@
 
 body {
-    background-color: #eaeef1;
+    background-color: white;
 }
 
 .div-background {
@@ -156,6 +156,7 @@ body {
 
 .block-project-home {
     padding: 100px 15%;
+    background-color: #eaeef1;
 }
 
 .div-project-home {
@@ -198,16 +199,8 @@ body {
     font-size: 20px;
 }
 
-.div-profile {
-    padding: 0 7%;
-}
-
 .row {
     padding: 20px 3%;
-}
-
-.block-profile, .block-profile-container {
-    margin-bottom: 40px;
 }
 
 .column {
@@ -215,8 +208,7 @@ body {
 }
 
 .block-profile {
-    padding: 30px;
-    border-radius: 0;
+    padding: 50px 15%;
 }
 
 .img-profile {
@@ -268,6 +260,64 @@ body {
     height: 300px;
     padding: 10px 60px;
 }
+
+/* Formations */
+
+.block-formations {
+    padding: 70px 0 0 17%;
+    background-color: #eaeef1;
+}
+
+.div-text-formations {
+    text-align: center;
+    width: 80%;
+    margin-bottom: 80px;
+}
+
+.div-formations {
+    display: inline-block;
+    width: 550px;
+}
+
+.div-block {
+    height: 180px;
+    width: 96%;
+}
+
+.div-left, .div-right {
+    display: inline-block;
+    height: 96%;
+    vertical-align: top;
+}
+
+.div-left {
+    width: 60px;
+}
+
+.div-right {
+    width: 80%;
+    margin-left: 20px;
+}
+
+.div-round {
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    background-color: #072DF9;
+}
+
+.div-barre {
+    width: 10px;
+    height: 120px;
+    background-color: #072DF9;
+    margin: 0 25px;
+}
+
+.round-img {
+    padding: 14px 11px;
+}
+
+/* ------------------------- */
 
 .diagrams {
     margin-top: 40px;
@@ -540,6 +590,7 @@ body {
     margin: 0;
     height: auto;
     padding: 120px 8%;
+    background-color: #eaeef1;
 }
 
 .form-contact {
