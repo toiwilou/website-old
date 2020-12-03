@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Entity\Skill;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -23,8 +24,10 @@ class TemplatesController extends AbstractController
      */
     public function profile(): Response
     {
+        $skills = $this->getDoctrine()->getRepository(Skill::class)->findAll();
+
         return $this->render('templates/profile.html.twig', [
-            'controller_name' => 'TemplatesController',
+            'skills' => $skills,
         ]);
     }
 
