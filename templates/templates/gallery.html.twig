@@ -11,7 +11,9 @@
 </div>
 
 <div class="div-photos">
-
+    {% for image in images %}
+        <div><img src="{{ asset("images/" ~ image.url ) }}"></div>
+    {% endfor %}
 </div>
 
 {% endblock %}
