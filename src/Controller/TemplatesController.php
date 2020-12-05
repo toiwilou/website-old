@@ -4,7 +4,9 @@ namespace App\Controller;
 
 use App\Entity\Skill;
 use App\Entity\Image;
+use App\Form\SkillFormType;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
@@ -57,12 +59,19 @@ class TemplatesController extends AbstractController
     /**
      * @Route("/admin", name="admin")
      */
-    public function admin(): Response
+    public function admin(Request $request): Response
     {
-        
+        $skills = new Skill();
+        $form = $this->createForm(SkillFormType::class, $skills);
+        $form->handleRequest($request);
+        if($form->isSubmitted() && $form->isValid()){
+            $doctrine = $this->getDoctrine()->getManager();
+            $doctrine->persist($skills);
+            //$doctrine->flush();
+        }
 
         return $this->render('templates/admin.html.twig', [
-            'controller_name' => 'TemplatesController',
+            'form' => $form->createView(),
         ]);
     }
 }
