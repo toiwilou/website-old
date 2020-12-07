@@ -537,29 +537,6 @@ body {
     background-color: blue;
 }
 
-/* ===== Gallerie ===== */
-
-.header-gallery {
-    width: 100%;
-    height: 550px;
-    background-image: url('img/fond_gallerie.jpeg');
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.title-gallery {
-    font-size: 150px;
-}
-
-.para-gallery {
-    font-size: 25px;
-}
-
-.div-photos {
-    margin: 0;
-    padding: 60px 10%;
-}
-
 /* ===== Contact ===== */
 
 .header-contact {
@@ -628,6 +605,29 @@ body {
     padding-top: 50px;
     padding-bottom: 20px;
     text-align: center;
+}
+
+/* ===== Gallerie ===== */
+
+.header-gallery {
+    width: 100%;
+    height: 550px;
+    background-image: url('img/fond_gallerie.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title-gallery {
+    font-size: 150px;
+}
+
+.para-gallery {
+    font-size: 25px;
+}
+
+.div-photos {
+    margin: 0;
+    padding: 60px;
 }
 
 /* ===== Footer ===== */

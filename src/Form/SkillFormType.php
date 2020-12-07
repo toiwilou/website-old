@@ -17,12 +17,7 @@ class SkillFormType extends AbstractType
         $builder
             ->add('title')
             ->add('star')
-            ->add('content', TextareaType::class, [
-                'attr' => [
-                    'class' => 'form-control',
-                    'style' => 'width: 400px; margin: 30px; border-radius: 10px;'
-                ]
-            ])
+            ->add('content', TextareaType::class)
             ->add('Ajouter', SubmitType::class)
         ;
     }
