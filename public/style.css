@@ -261,6 +261,17 @@ body {
     padding: 10px 60px;
 }
 
+/* Compétences */
+
+.skills-hide {
+    display: none;
+}
+
+.skills-visible {
+    display: block;
+    transition: 3s;
+}
+
 /* Formations */
 
 .block-formations {

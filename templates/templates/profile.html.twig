@@ -37,15 +37,29 @@
     </div>
 
     <div style="padding: 20px 0;">
-        {% for skill in skills %}
+        <h1 style="text-align: center; font-size: 60px; margin: 30px 0; font-family: serif;">Compétences techniques</h1>
+        {% for i in 0..2 %}
             <div style="padding: 20px 20px;">
-                <h3 style="margin-bottom: 0; font-family: serif;"><strong>{{ skill.title }}</strong></h3>
-                <span style="font-size: 28px; color: orange;">{% for i in 1..(skill.star) %}&#9733;{% endfor %}</span>
+                <h3 style="margin-bottom: 0; font-family: serif;"><strong>{{ skills[i].title }}</strong></h3>
+                <span style="font-size: 28px; color: orange;">{% for j in 1..(skills[i].star) %}&#9733;{% endfor %}</span>
                 <div style="border: 3px solid rgb(0, 153, 255); padding: 15px; border-radius: 10px; background-color: rgb(229, 245, 245);">
-                    <p style="text-align: justify; font-size: 20px">{{ skill.content }}</p>
+                    <p style="text-align: justify; font-size: 20px">{{ skills[i].content }}</p>
                 </div>
             </div>
         {% endfor %}
+        <div style="padding: 20px;"><button type="button" class="open-skills btn btn-primary">Voir plus de compétences</button></div>
+        <div class="skills-hide">
+            {% for k in 3..((skills|length)-1) %}
+                <div style="padding: 20px 20px;">
+                    <h3 style="margin-bottom: 0; font-family: serif;"><strong>{{ skills[k].title }}</strong></h3>
+                    <span style="font-size: 28px; color: orange;">{% for j in 1..(skills[k].star) %}&#9733;{% endfor %}</span>
+                    <div style="border: 3px solid rgb(0, 153, 255); padding: 15px; border-radius: 10px; background-color: rgb(229, 245, 245);">
+                        <p style="text-align: justify; font-size: 20px">{{ skills[k].content }}</p>
+                    </div>
+                </div>
+            {% endfor %}
+            <div style="padding: 20px;"><button type="button" class="close-skills btn btn-outline-primary">Voir moins de compétences</button></div>
+        </div>
     </div>
 </section>
 
