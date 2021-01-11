@@ -2,9 +2,11 @@
 
 namespace App\Controller;
 
+use App\Entity\Contact;
 use App\Entity\Skill;
 use App\Entity\Image;
 use App\Form\SkillFormType;
+use App\Form\UserFormType;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -15,10 +17,19 @@ class TemplatesController extends AbstractController
     /**
      * @Route("/", name="home")
      */
-    public function index(): Response
+    public function index(Request $request): Response
     {
+        $contact = new Contact();
+        $contactForm = $this->createForm(UserFormType::class, $contact);
+        $contactForm->handleRequest($request);
+        if($contactForm->isSubmitted() && $contactForm->isValid()){
+            $doctrine = $this->getDoctrine()->getManager();
+            $doctrine->persist($contact);
+            //$doctrine->flush();
+        }
+
         return $this->render('templates/index.html.twig', [
-            'controller_name' => 'TemplatesController',
+            'contactForm' => $contactForm->createView(),
         ]);
     }
 
@@ -61,17 +72,19 @@ class TemplatesController extends AbstractController
      */
     public function admin(Request $request): Response
     {
+        
+
         $skills = new Skill();
-        $form = $this->createForm(SkillFormType::class, $skills);
-        $form->handleRequest($request);
-        if($form->isSubmitted() && $form->isValid()){
+        $skillsForm = $this->createForm(SkillFormType::class, $skills);
+        $skillsForm->handleRequest($request);
+        if($skillsForm->isSubmitted() && $skillsForm->isValid()){
             $doctrine = $this->getDoctrine()->getManager();
             $doctrine->persist($skills);
             //$doctrine->flush();
         }
 
         return $this->render('templates/admin.html.twig', [
-            'form' => $form->createView(),
+            'skillsForm' => $skillsForm->createView(),
         ]);
     }
 }

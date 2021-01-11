@@ -653,3 +653,17 @@ body {
 }
 
 /* ================== */
+
+.div-content {
+    padding: 100px 5%;
+    text-align: center;
+}
+
+.test-div {
+    width: 400px;
+    height: 320px;
+    background-color: lawngreen;
+    margin: 20px;
+    display: inline-block;
+    border-radius: 10px;
+}

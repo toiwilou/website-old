@@ -1,6 +1,13 @@
 security:
+    encoders:
+        App\Entity\User:
+            algorithm: plaintext
     # https://symfony.com/doc/current/security.html#where-do-users-come-from-user-providers
     providers:
+        our_db_provider:
+            entity:
+                class: App\Entity\User
+                property: username
         users_in_memory: { memory: null }
     firewalls:
         dev:
@@ -8,8 +15,14 @@ security:
             security: false
         main:
             anonymous: true
+            form_login:
+                login_path: login
+                check_path: login
             lazy: true
             provider: users_in_memory
+            logout:
+                path:   /logout
+                target: /
 
             # activate different ways to authenticate
             # https://symfony.com/doc/current/security.html#firewalls-authentication
